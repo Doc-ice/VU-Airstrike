@@ -1,0 +1,9 @@
+{
+	"Name": "air_strike",
+	"Authors": ["Doc"],
+	"Description": "air strike bases",
+	"Version": "5",
+	"HasWebUI": true,
+	"Tags": ["air-strike"],
+	"HasVeniceEXT": true
+}
