@@ -42,14 +42,18 @@ mapdata= {
 {["map"] = "Levels/XP1_004/UI/Minimap/XP1_004_",["WorldSize"]= 2048,["WorldCenter"]={0,0}},
 {["map"] = "Levels/XP3_Valley/UI/Minimap/XP3_Valley_",["WorldSize"]= 2048,["WorldCenter"]={0,0}},
 {["map"] = "Levels/XP3_Shield/UI/Minimap/XP3_Shield_",["WorldSize"]= 2048,["WorldCenter"]={0,0}},
+{["map"] = "Levels/XP3_Desert/UI/Minimap/XP3_Alborz_",["WorldSize"]= 2048,["WorldCenter"]={600,250}},
 {["map"] = "Levels/XP3_Desert/UI/Minimap/XP3_Desert_",["WorldSize"]= 2048,["WorldCenter"]={0,0}},
 {["map"] = "Levels/XP4_Parl/UI/Minimap/XP4_Parliament_",["WorldSize"]= 1024,["WorldCenter"]={-150,50}},
 {["map"] = "Levels/XP4_Rubble/UI/Minimap/XP4_Rubble_",["WorldSize"]= 512,["WorldCenter"]={40,0}},
---XP4_Quake.txt file
 {["map"] = "Levels/XP4_Quake/UI/Minimap/XP4_Earthquake_",["WorldSize"]= 512,["WorldCenter"]={-150,0}},
 {["map"] = "Levels/XP4_FD/UI/Minimap/XP4_FinancialDistrict_",["WorldSize"]= 1024,["WorldCenter"]={75,-75}},
-{["map"] = "Levels/XP5_001/UI/Minimap/XP5_001_",["WorldSize"]= 1024,["WorldCenter"]={79, 51}}
+{["map"] = "Levels/XP5_001/UI/Minimap/XP5_001_",["WorldSize"]= 1024,["WorldCenter"]={79, 51}},
+{["map"] = "Levels/XP5_002/UI/Minimap/XP5_002_",["WorldSize"]= 1024,["WorldCenter"]={-1800, 51}},
+{["map"] = "Levels/XP5_003/UI/Minimap/XP5_003_",["WorldSize"]= 1024,["WorldCenter"]={60,-850}},
+{["map"] = "Levels/XP5_004/UI/Minimap/XP5_004_",["WorldSize"]= 1024,["WorldCenter"]={-920,-900}}
 }
+
 function OnUpdate(p_Delta)
 --[[m_LastUpdate = m_LastUpdate + p_Delta
 if m_LastUpdate < (1.0 / 60.0) then
