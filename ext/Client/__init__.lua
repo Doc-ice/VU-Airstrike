@@ -40,6 +40,10 @@ mapdata= {
 {["map"] = "Levels/XP1_002/UI/Minimap/XP1_002_",["WorldSize"]= 2048,["WorldCenter"]={0,0}},
 {["map"] = "Levels/XP1_003/UI/Minimap/XP1_003_",["WorldSize"]= 2048,["WorldCenter"]={0,0}},
 {["map"] = "Levels/XP1_004/UI/Minimap/XP1_004_",["WorldSize"]= 2048,["WorldCenter"]={0,0}},
+{["map"] = "Levels/XP1_001/UI/Minimap/XP1_001_",["WorldSize"]= 1024,["WorldCenter"]={0,0}},
+{["map"] = "Levels/XP1_002/UI/Minimap/XP1_002_",["WorldSize"]= 2048,["WorldCenter"]={0,0}},
+{["map"] = "Levels/XP1_003/UI/Minimap/XP1_003_",["WorldSize"]= 2048,["WorldCenter"]={0,0}},
+{["map"] = "Levels/XP1_004/UI/Minimap/XP1_004_",["WorldSize"]= 2048,["WorldCenter"]={0,0}},
 {["map"] = "Levels/XP3_Valley/UI/Minimap/XP3_Valley_",["WorldSize"]= 2048,["WorldCenter"]={0,0}},
 {["map"] = "Levels/XP3_Shield/UI/Minimap/XP3_Shield_",["WorldSize"]= 2048,["WorldCenter"]={0,0}},
 {["map"] = "Levels/XP3_Desert/UI/Minimap/XP3_Alborz_",["WorldSize"]= 2048,["WorldCenter"]={600,250}},
@@ -296,7 +300,7 @@ local Conquest=string.find(gm, "Conquest")
 local myPlayer=PlayerManager:GetLocalPlayer()
 if InputManager:WentKeyDown(InputDeviceKeys.IDK_F1) and not AS_active then
 
-NetEvents:Send('Airstrike:Yell', {PlayerManager:GetLocalPlayer().name,10,'Ä Artillery strike Not Avaliable'})
+NetEvents:Send('Airstrike:Yell', {PlayerManager:GetLocalPlayer().name,10,killsneeded-killCounter..' more kill to get Ä Airstrike'})
 
 end
 if InputManager:WentKeyDown(InputDeviceKeys.IDK_F1) and AS_active and checkformap(mapdata,mapname) and myPlayer.soldier and Conquest then
