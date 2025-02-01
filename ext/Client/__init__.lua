@@ -303,7 +303,7 @@ if InputManager:WentKeyDown(InputDeviceKeys.IDK_F1) and not AS_active then
 NetEvents:Send('Airstrike:Yell', {PlayerManager:GetLocalPlayer().name,10,killsneeded-killCounter..' more kill to get Ä Airstrike'})
 
 end
-if InputManager:WentKeyDown(InputDeviceKeys.IDK_F1) and AS_active and checkformap(mapdata,mapname) and myPlayer.soldier and Conquest then
+if InputManager:WentKeyDown(InputDeviceKeys.IDK_F1) and AS_active and checkformap(mapdata,mapname) and myPlayer.soldier then
 
 pti=myPlayer.teamId
 	
