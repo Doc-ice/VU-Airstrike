@@ -46,7 +46,7 @@ mapdata= {
 {["map"] = "Levels/XP1_004/UI/Minimap/XP1_004_",["WorldSize"]= 2048,["WorldCenter"]={0,0}},
 {["map"] = "Levels/XP3_Valley/UI/Minimap/XP3_Valley_",["WorldSize"]= 2048,["WorldCenter"]={0,0}},
 {["map"] = "Levels/XP3_Shield/UI/Minimap/XP3_Shield_",["WorldSize"]= 2048,["WorldCenter"]={0,0}},
-{["map"] = "Levels/XP3_Desert/UI/Minimap/XP3_Alborz_",["WorldSize"]= 2048,["WorldCenter"]={600,250}},
+{["map"] = "Levels/XP3_Alborz/UI/Minimap/XP3_Alborz_",["WorldSize"]= 2048,["WorldCenter"]={600,250}},
 {["map"] = "Levels/XP3_Desert/UI/Minimap/XP3_Desert_",["WorldSize"]= 2048,["WorldCenter"]={0,0}},
 {["map"] = "Levels/XP4_Parl/UI/Minimap/XP4_Parliament_",["WorldSize"]= 1024,["WorldCenter"]={-150,50}},
 {["map"] = "Levels/XP4_Rubble/UI/Minimap/XP4_Rubble_",["WorldSize"]= 512,["WorldCenter"]={40,0}},
