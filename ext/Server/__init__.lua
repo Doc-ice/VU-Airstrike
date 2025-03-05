@@ -1,4 +1,5 @@
-local data = {}
+function RegisterVars()
+data = {}
 cumulateTime = 0
 playerUpdate = 1
 admin={'Doc-Ice-Elm'}
@@ -8,7 +9,11 @@ m_InitialTimer = 5.0
 m_Position = { 0.0, 0.0, 0.0 }
 m_Objectives={}
 m_LastUpdate = 0.0
-botkillsneeded=6
+botkillsneeded=7
+end
+Events:Subscribe('Level:Loaded', function(levelName, gameMode, round, roundsPerMap)
+ RegisterVars()
+end)
 local STRIKE_AREA_RADIUS = math.random(15,30)
 local STRIKE_DURATION = math.random(10,30)
 local STRIKE_MISSILE_COUNT = math.random(15,30)
