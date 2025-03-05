@@ -1,5 +1,4 @@
 function RegisterVars()
-data = {}
 cumulateTime = 0
 playerUpdate = 1
 admin={'Doc-Ice-Elm'}
@@ -14,6 +13,7 @@ end
 Events:Subscribe('Level:Loaded', function(levelName, gameMode, round, roundsPerMap)
  RegisterVars()
 end)
+local data = {}
 local STRIKE_AREA_RADIUS = math.random(15,30)
 local STRIKE_DURATION = math.random(10,30)
 local STRIKE_MISSILE_COUNT = math.random(15,30)
