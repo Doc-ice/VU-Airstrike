@@ -7,15 +7,15 @@ end)
 Events:Subscribe('Level:Destroy', function()
    WebUI:Hide()
    WebUI:DisableMouse()
-   m_Objectives={}
 end)
-local STRIKE_AREA_RADIUS = math.random(15,30)
-local STRIKE_DURATION = math.random(10,30)
-local STRIKE_MISSILE_COUNT = math.random(15,30)
+function RegisterVars()
+STRIKE_AREA_RADIUS = math.random(15,30)
+STRIKE_DURATION = math.random(10,30)
+STRIKE_MISSILE_COUNT = math.random(15,30)
 active = false
 AS_active= false
-local killCounter = 0
-local killsneeded=7
+killCounter = 0
+killsneeded=7
 m_LastUpdate = 0.0
 m_InitialTimer = 5.0
 m_Position = { 0.0, 0.0, 0.0 }
@@ -26,6 +26,10 @@ rba=0
 misslesoundMaxRange=40
 UPDATE_RATE=6
 m_UpdateTimer=0
+end
+Events:Subscribe('Level:Loaded', function(levelName, gameMode)
+RegisterVars()
+end)
 mapdata= {
 {["map"] = "Levels/MP_001/UI/Minimap/MP01_",["WorldSize"]= 512,["WorldCenter"]={0,0}},
 {["map"] = "Levels/MP_003/UI/Minimap/MP03_",["WorldSize"]= 2048,["WorldCenter"]={0,0}},
